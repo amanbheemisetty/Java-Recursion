@@ -1,0 +1,17 @@
+class Main {
+  public static void main(String[] args) {
+    Main obj = new Main();
+    int sol =obj.fact(4);
+    System.out.println(sol);
+     
+  }
+  public int fact(int n)
+  { 
+    if (n <1)
+      return -1;
+    if (n ==0 || n ==1)
+      return 1;
+    else
+    return n*fact(n-1);
+  }
+}
