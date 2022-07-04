@@ -1,0 +1,19 @@
+class Main {
+  public static void main(String[] args) {
+    Main obj = new Main();
+    var sol =obj.sumofdigits(-3);
+    System.out.println(sol);
+     
+  }
+  public int sumofdigits(int n)
+  { 
+    if (n < 0){
+      return -1;
+    }
+    if (n < 9){
+      return n;
+    }
+    return n%10 + sumofdigits(n/10);
+    
+}
+}
