@@ -1,0 +1,13 @@
+public class Exercise {
+    public int power(int base, int exponent) {
+        // TODO
+        if ( exponent == 0){
+            return 1;
+        }
+        if (exponent ==1 ){
+            return base;
+        }
+        return power(base,exponent -1);
+    }
+
+}
