@@ -1,0 +1,17 @@
+class Main {
+  public static void main(String[] args) {
+    Main obj = new Main();
+    var sol =obj.D2B(10);
+    System.out.println(sol);
+     
+  }
+  public int D2B(int n)
+  { 
+    if (n == 0){
+      return 0;
+    }
+    
+  return n%2 + 10 * D2B(n/2);
+    
+}
+}
